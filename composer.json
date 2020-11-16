@@ -1,0 +1,19 @@
+{
+    "name": "aderbal-yamamoto/recrutamento",
+    "authors": [
+        {
+            "name": "aderbal-yamamoto",
+            "email": "suporte@suporte.com.br"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Recrut\\": "vendor\\recrutbr\\php-classes\\src"
+        }
+    }
+}
