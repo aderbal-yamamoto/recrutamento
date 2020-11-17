@@ -2,17 +2,18 @@
 
 require_once("vendor/autoload.php");
 
+use \Slim\Slim;
+use \Recrut\Page;
+
 $app = new \Slim\Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
     
-	$sql = new Recrut\DB\Sql();
+	$Page = new Page();
 
-	$results = $sql->select("SELECT * FROM tb_usuarios");
-
-	echo json_encode($results) ;
+	$Page->setTpl("index");
 
 });
 
